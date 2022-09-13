@@ -9,6 +9,7 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
     {
         int add(IngresoVehiculo ingresoVehiculo);
         IngresoVehiculo Find(int id);
+        IEnumerable<IngresoVehiculo> ObtenerIngresoVehiculo();
 
     }
 }

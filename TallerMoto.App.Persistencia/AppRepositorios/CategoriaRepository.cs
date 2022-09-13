@@ -19,9 +19,17 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
             return _context.SaveChanges();
         }
 
-         Categoria ICategoria.Find(int id)
+        public IEnumerable<Categoria> ObtenerCategorias()
+        {
+            return _context.Categorias;
+        }
+
+        Categoria ICategoria.Find(int id)
         {
            return  _context.Categorias.Find(id);
         }
+
+      
+     
     }
 }

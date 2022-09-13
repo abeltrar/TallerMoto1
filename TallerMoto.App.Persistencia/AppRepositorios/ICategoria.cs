@@ -8,6 +8,7 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
     public interface ICategoria
     {
         int add(Categoria categoria);
-        Categoria Find(int id); 
+        Categoria Find(int id);
+        IEnumerable<Categoria> ObtenerCategorias();     
     }
 }

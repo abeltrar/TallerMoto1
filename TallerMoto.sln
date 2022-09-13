@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.28803.916
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TallerMoto", "TallerMoto\TallerMoto.csproj", "{45354885-BE46-4F7A-ACB2-C95229E0351E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TallerMoto.App.Persistencia", "TallerMoto.App.Persistencia\TallerMoto.App.Persistencia.csproj", "{67D95DD5-F076-4622-8A33-34BBA5558FDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TallerMoto.App.Persistencia", "TallerMoto.App.Persistencia\TallerMoto.App.Persistencia.csproj", "{67D95DD5-F076-4622-8A33-34BBA5558FDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TallerMoto.App.Dominio", "TallerMoto.App.Dominio\TallerMoto.App.Dominio.csproj", "{FA1A6749-95B9-4851-8274-55DA3D28C573}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TallerMoto.App.Dominio", "TallerMoto.App.Dominio\TallerMoto.App.Dominio.csproj", "{FA1A6749-95B9-4851-8274-55DA3D28C573}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TallerMoto.ConsolaA", "TallerMoto.ConsolaA\TallerMoto.ConsolaA.csproj", "{D3F62A18-0473-4C4E-9B43-E7930D9BC02B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TallerMoto.ConsolaA", "TallerMoto.ConsolaA\TallerMoto.ConsolaA.csproj", "{D3F62A18-0473-4C4E-9B43-E7930D9BC02B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -19,9 +19,16 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
             return _context.SaveChanges();
         }
 
+      
+
         IngresoVehiculo IIngresoVehiculo.Find(int id)
         {
             return _context.IngresoVehiculos.Find(id);
+        }
+
+        IEnumerable<IngresoVehiculo> IIngresoVehiculo.ObtenerIngresoVehiculo()
+        {
+            return _context.IngresoVehiculos;
         }
     }
 }

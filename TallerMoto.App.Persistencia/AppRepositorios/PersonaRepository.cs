@@ -20,9 +20,16 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
              
         }
 
+      
+
         Persona IPersona.Find(int id)
         {
             return _context.Personas.Find(id);
+        }
+
+         IEnumerable<Persona> IPersona.ObtenerPersonas()
+        {
+            return _context.Personas;
         }
     }
 }

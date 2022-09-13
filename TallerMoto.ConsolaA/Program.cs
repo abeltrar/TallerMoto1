@@ -17,10 +17,19 @@ namespace TallerMoto.ConsolaA
                 Descripcion = "Prueba"
             };
 
+           
+         
+
        
           
 
            
         }
+        public static void ObtenerCategorias()
+        {
+            var ListadoPersonas = CategoriaRepository.ObtenerCategorias();
+
+        }
+
     }
 }
