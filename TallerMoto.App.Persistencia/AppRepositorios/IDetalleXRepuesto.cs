@@ -8,5 +8,6 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
     public interface IDetalleXRepuesto
     {
         int add(DetalleXRepuesto detalleXRepuesto);
+        DetalleXRepuesto Find(int id);
     }
 }

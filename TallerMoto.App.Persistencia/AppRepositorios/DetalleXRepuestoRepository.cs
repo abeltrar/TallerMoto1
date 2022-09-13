@@ -18,5 +18,10 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
             _context.detalleXRepuestos.Add(detalleXRepuesto);
             return _context.SaveChanges();
         }
+
+        DetalleXRepuesto IDetalleXRepuesto.Find(int id)
+        {
+            return _context.detalleXRepuestos.Find(id);
+        }
     }
 }

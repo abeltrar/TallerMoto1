@@ -8,6 +8,7 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
     public interface IIngresoVehiculo
     {
         int add(IngresoVehiculo ingresoVehiculo);
+        IngresoVehiculo Find(int id);
 
     }
 }

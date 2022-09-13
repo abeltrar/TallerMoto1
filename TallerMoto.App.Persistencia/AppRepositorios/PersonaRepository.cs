@@ -19,5 +19,10 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
             return _context.SaveChanges();
              
         }
+
+        Persona IPersona.Find(int id)
+        {
+            return _context.Personas.Find(id);
+        }
     }
 }

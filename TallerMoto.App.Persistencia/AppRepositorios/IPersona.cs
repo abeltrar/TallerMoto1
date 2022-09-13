@@ -8,5 +8,6 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
     public interface IPersona
     {
        int Add(Persona persona);
+        Persona Find(int id);
     }
 }
