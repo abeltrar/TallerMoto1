@@ -9,6 +9,5 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
     {
        int Add(Persona persona);
         Persona Find(int id);
-        IEnumerable<Persona> ObtenerPersonas();
     }
 }

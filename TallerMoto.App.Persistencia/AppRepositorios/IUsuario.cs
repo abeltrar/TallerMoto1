@@ -9,6 +9,5 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
     {
         int Add(Usuarios usuarios);
         Usuarios Find(int id);
-        IEnumerable<Usuarios> ObtenerUsuarios();
     }
 }

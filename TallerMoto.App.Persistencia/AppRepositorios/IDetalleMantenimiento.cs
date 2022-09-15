@@ -10,8 +10,5 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
     {
         int add(DetalleMantenimiento detalleMantenimiento);
         DetalleMantenimiento Find(int id);
-        IEnumerable<DetalleMantenimiento> detalleMantenimientos();
-        IEnumerable<DetalleMantenimiento> ObtenerDetalleXEstado(Estado estado);
-        int ActualizarDetalle(DetalleMantenimiento detalle);
     }
 }

@@ -9,6 +9,5 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
     {
         int add(DetalleXRepuesto detalleXRepuesto);
         DetalleXRepuesto Find(int id);
-        IEnumerable<DetalleXRepuesto> ObtenerDetalleXRepuesto();
     }
 }

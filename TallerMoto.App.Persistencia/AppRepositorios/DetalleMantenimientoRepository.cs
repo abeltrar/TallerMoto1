@@ -20,27 +20,9 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
             return _context.SaveChanges();
         }
 
-       
-
         DetalleMantenimiento IDetalleMantenimiento.Find(int id)
         {
             return _context.DetalleMantenimientos.Find(id);
-        }
-
-        IEnumerable<DetalleMantenimiento> IDetalleMantenimiento.detalleMantenimientos()
-        {
-            return _context.DetalleMantenimientos;
-        }
-
-         IEnumerable<DetalleMantenimiento> IDetalleMantenimiento.ObtenerDetalleXEstado(Estado estado)
-        {
-            return _context.DetalleMantenimientos.Where(p => p.estado == estado);
-        }
-
-        int IDetalleMantenimiento.ActualizarDetalle(DetalleMantenimiento detalle)
-        {
-             _context.DetalleMantenimientos.Update(detalle);
-            return _context.SaveChanges();
         }
     }
 }
