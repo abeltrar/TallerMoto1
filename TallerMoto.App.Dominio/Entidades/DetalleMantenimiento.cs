@@ -7,12 +7,13 @@ namespace TallerMoto.App.Dominio.Entidades
 {
     public class DetalleMantenimiento:IngresoVehiculo
     {
-        int IdDetalle { get; set; }
-        IngresoVehiculo IdIngreso { get; set; }
-        DateTime FechaInicio { get; set; }
-        DateTime FechaFin { get; set; }
-        string Observacion { get; set; }
-        Estado IdEstado { get; set; }
+        public Estado estado { get; set; }
+        public int IdDetalle { get; set; }
+        public IngresoVehiculo IdIngreso { get; set; }
+        public DateTime FechaInicio { get; set; }
+        public DateTime FechaFin { get; set; }
+        public string Observacion { get; set; }
+        public Estado IdEstado { get; set; }
 
 
     }

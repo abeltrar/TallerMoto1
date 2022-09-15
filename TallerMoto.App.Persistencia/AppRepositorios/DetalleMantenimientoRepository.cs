@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using TallerMoto.App.Dominio.Entidades;
+using TallerMoto.App.Dominio.Enums;
 
 namespace TallerMoto.App.Persistencia.AppRepositorios
 {
@@ -30,5 +32,15 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
             return _context.DetalleMantenimientos;
         }
 
+         IEnumerable<DetalleMantenimiento> IDetalleMantenimiento.ObtenerDetalleXEstado(Estado estado)
+        {
+            return _context.DetalleMantenimientos.Where(p => p.estado == estado);
+        }
+
+        int IDetalleMantenimiento.ActualizarDetalle(DetalleMantenimiento detalle)
+        {
+             _context.DetalleMantenimientos.Update(detalle);
+            return _context.SaveChanges();
+        }
     }
 }
