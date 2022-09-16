@@ -9,5 +9,8 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
     {
         int Add(Usuarios usuarios);
         Usuarios Find(int id);
+
+        int ActualizarUsuario(Usuarios usuario);
+        int EliminarUsuario(Usuarios usuario);
     }
 }

@@ -9,5 +9,8 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
     {
         int Add(Repuestos repuestos);
         Repuestos Find(int id);
+        int ActualizarRepuesto(Repuestos repuesto);
+        int EliminarRepuesto(Repuestos repuestos);
+
     }
 }

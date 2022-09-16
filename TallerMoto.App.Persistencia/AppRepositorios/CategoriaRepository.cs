@@ -29,7 +29,18 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
            return  _context.Categorias.Find(id);
         }
 
-      
-     
+        int ICategoria.ActualizarCategoria(Categoria categoria){
+            _context.Categorias.Update(categoria);
+            return _context.SaveChanges();
+        }
+
+        int ICategoria.EliminarCategoria(Categoria categoria)
+        {
+            _context.Categorias.Remove(categoria);
+            return _context.SaveChanges();
+        }
+
+
+
     }
 }

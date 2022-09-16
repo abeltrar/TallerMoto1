@@ -9,6 +9,8 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
     {
         int add(IngresoVehiculo ingresoVehiculo);
         IngresoVehiculo Find(int id);
+        int ActualizarIngresoVehiculo(IngresoVehiculo ingresovehiculo);
+        int EliminarIngresoVehiculo(IngresoVehiculo ingresoVehiculo);
 
     }
 }

@@ -10,5 +10,7 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
         int add(Categoria categoria);
         Categoria Find(int id);
         IEnumerable<Categoria> ObtenerCategorias();     
+        int ActualizarCategoria(Categoria categoria);
+        int EliminarCategoria(Categoria categoria);
     }
 }

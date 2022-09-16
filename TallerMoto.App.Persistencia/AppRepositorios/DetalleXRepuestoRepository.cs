@@ -13,6 +13,8 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
             _context = context;
         }
 
+       
+
         public int add(DetalleXRepuesto detalleXRepuesto)
         {
             _context.detalleXRepuestos.Add(detalleXRepuesto);
@@ -22,6 +24,17 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
         DetalleXRepuesto IDetalleXRepuesto.Find(int id)
         {
             return _context.detalleXRepuestos.Find(id);
+        }
+        public int ActualizarDetalleXRepuesto(DetalleXRepuesto detallexrepuesto)
+        {
+            _context.detalleXRepuestos.Update(detallexrepuesto);
+            return _context.SaveChanges();
+        }
+
+        public int EliminarDetalleXRepuesto(DetalleXRepuesto detalleXRepuesto)
+        {
+            _context.detalleXRepuestos.Remove(detalleXRepuesto);
+            return _context.SaveChanges();
         }
     }
 }

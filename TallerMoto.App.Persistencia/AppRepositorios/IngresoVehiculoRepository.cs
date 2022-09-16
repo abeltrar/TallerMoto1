@@ -13,6 +13,7 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
             _context = context;
         }
 
+     
         public int add(IngresoVehiculo ingresoVehiculo)
         {
             _context.IngresoVehiculos.Add(ingresoVehiculo);
@@ -22,6 +23,20 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
         IngresoVehiculo IIngresoVehiculo.Find(int id)
         {
             return _context.IngresoVehiculos.Find(id);
+        }
+
+        public int ActualizarIngresoVehiculo(IngresoVehiculo ingresovehiculo)
+        {
+            _context.IngresoVehiculos.Update(ingresovehiculo);
+            return _context.SaveChanges();
+
+        }
+
+        public int EliminarIngresoVehiculo(IngresoVehiculo ingresoVehiculo)
+        {
+            _context.IngresoVehiculos.Remove(ingresoVehiculo);
+            return _context.SaveChanges();
+
         }
     }
 }

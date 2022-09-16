@@ -13,6 +13,7 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
             _context = context;
         }
 
+     
         public int Add(Usuarios usuarios)
         {
             _context.Usuario.Add(usuarios);
@@ -22,6 +23,18 @@ namespace TallerMoto.App.Persistencia.AppRepositorios
         Usuarios IUsuario.Find(int id)
         {
             return _context.Usuario.Find(id);
+        }
+
+        public int ActualizarUsuario(Usuarios usuario)
+        {
+            _context.Usuario.Update(usuario);
+            return _context.SaveChanges();
+        }
+
+        public int EliminarUsuario(Usuarios usuario)
+        {
+            _context.Usuario.Remove(usuario);
+            return _context.SaveChanges();
         }
     }
 }

@@ -7,13 +7,13 @@ namespace TallerMoto.App.Dominio.Entidades
 {
     public class Persona
     {
-        int IdPersona {get; set; }
-        
-        string Nombre { get; set; }
-        int Cedula { get; set; }
-        int Telefono { get; set; }
-        string Direccion { get; set; }
-        Rol IdRol { get; set; }
+        public int IdPersona {get; set; }
+
+        public string Nombre { get; set; }
+        public int Cedula { get; set; }
+        public int Telefono { get; set; }
+        public string Direccion { get; set; }
+        public Rol IdRol { get; set; }
 
 
 
